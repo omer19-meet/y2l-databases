@@ -5,13 +5,14 @@ from sqlalchemy import create_engine
 
 Base = declarative_base()
 class Product(Base):
-		__tablename__ = 'students'
+		__tablename__ = 'Products'
    		id = Column(Integer, primary_key=True)
    		name = Column(String)
    		picture = Column(String)
    		price = Column(Integer)
    		description = Column(String)
    		stock = Column(Boolean)
+
 
 # def add_product(name, picture, price , description, stock):
 #     Product_obj = Product(
